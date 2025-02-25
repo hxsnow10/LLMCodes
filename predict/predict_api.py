@@ -117,7 +117,7 @@ def main(
     stream: bool = False
 ) -> int:
     # 获取API密钥
-    api_key = os.getenv("OPENAI_API_KEY") or "sk-31943b62c3b5411a86fdaa641aa2c624"
+    api_key = os.getenv("PROXY_API_KEY")
     if not api_key:
         print("错误: 未设置OPENAI_API_KEY环境变量", file=sys.stderr)
         return 1
